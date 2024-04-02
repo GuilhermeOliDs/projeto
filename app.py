@@ -10,7 +10,7 @@ st.set_page_config(layout="wide")
 
 def create_dataframe_section(df):
     st.title("Sctions - Database Description")
-=======
+
 import streamlit as st
 from src.extraction import load_data
 
@@ -18,7 +18,7 @@ st.set_page_config(layout='wide')
 
 def create_dataframe_section(df):
     st.title("Database Section")
->>>>>>> 3da09e33dc92a2b8b36853319d582dff283dd43d
+
 
     col_1, col_2 = st.columns(2)
 
@@ -47,16 +47,14 @@ def create_dataframe_section(df):
 
     col_2.markdown(data_description)
 
-<<<<<<< HEAD
-=======
     return None
->>>>>>> 3da09e33dc92a2b8b36853319d582dff283dd43d
+
 
 def create_answers_section(df):
     st.title("Main Questions Answers")
 
     st.header("First Round")
-<<<<<<< HEAD
+
     st.subheader(
         "How many bikes are being sold by their owners and how many bikes are being sold by distributors?"
     )
@@ -136,4 +134,4 @@ def main():
 
 if __name__ == '__main__':
     main()
->>>>>>> 3da09e33dc92a2b8b36853319d582dff283dd43d
+
