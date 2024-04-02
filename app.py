@@ -11,10 +11,8 @@ st.set_page_config(layout="wide")
 def create_dataframe_section(df):
     st.title("Sctions - Database Description")
 
-import streamlit as st
-from src.extraction import load_data
 
-st.set_page_config(layout='wide')
+    st.set_page_config(layout='wide')
 
 def create_dataframe_section(df):
     st.title("Database Section")
@@ -103,7 +101,7 @@ def create_main_layout():
 
 if __name__ == "__main__":
     create_main_layout()
-=======
+
     st.subheader("How many bikes are being sold by their owners and how many bikes are being sold by distributors?")
 
     st.subheader("How many bikes are being sold are bikes from a unique owner?")
@@ -122,13 +120,13 @@ if __name__ == "__main__":
 
     st.subheader("Which bikes are good for buying?")
     
-    return None
+    
 
 
 def main():
     df_raw = load_data()
 
-    create_dataframe_section(df_raw):
+    create_dataframe_section(df_raw)
 
     st.dataframe(df_raw)
 
